@@ -30,7 +30,7 @@ const badgeVariants = cva(
 );
 
 function Badge({ className, variant = "default", asChild = false, ...props }) {
-  const Comp = asChild ? Slot.Root : "span";
+  const Comp = asChild ? Slot : "span";
 
   return (
     <Comp
